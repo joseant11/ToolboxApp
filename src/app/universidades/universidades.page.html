@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <h1 class="centered-title">
+      <ion-icon class="logo-image" name="hammer"></ion-icon>
+      Universidades
+    </h1>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="avatar">
+    <ion-icon name="school"></ion-icon>
+  </div>
+  <ion-item>
+    <ion-label position="floating">Country Name</ion-label>
+    <ion-input [(ngModel)]="countryName"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="searchUniversities()">Search</ion-button>
+
+  <ion-list>
+    <ion-item *ngFor="let university of universities">
+      <ion-icon name="school" slot="start"></ion-icon>
+      <ion-label>
+        <h2>{{ university.name }}</h2>
+        <p>Domains: {{ university.domains.join(', ') }}</p>
+        <p>Web pages:</p>
+        <ion-list>
+          <ion-item *ngFor="let webPage of university.web_pages">
+            <ion-icon name="globe" slot="start"></ion-icon>
+            <a href="{{ webPage }}">{{ webPage }}</a>
+          </ion-item>
+        </ion-list>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

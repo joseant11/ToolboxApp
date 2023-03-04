@@ -1,0 +1,74 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .centered-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .logo-image {
+    border-radius: 50%;
+    max-height: 24px;
+    margin-right: 18px;
+  }
+
+  .centered-image {
+    display: block;
+    margin: auto;
+  }
+
+  .resultado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .nombre-masculino {
+    font-size: 24px;
+    font-weight: bold;
+    color: blue;
+    margin-left: 10px;
+    text-transform: uppercase;
+  }
+  
+  .nombre-femenino {
+    font-size: 24px;
+    font-weight: bold;
+    color: pink;
+    margin-left: 10px;
+    text-transform: uppercase;
+  }
+  
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+ 
+}
+
+.avatar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+.avatar ion-icon {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease-in-out;
+}
+
+ion-icon:hover {
+  transform: rotate(360deg);
+}

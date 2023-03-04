@@ -1,0 +1,51 @@
+.toolbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  h1{
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .centered-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .logo-image {
+    border-radius: 50%;
+    max-height: 24px;
+    margin-right: 18px;
+  }
+
+  .centered-image {
+    display: block;
+    margin: auto;
+  }
+
+.toolbox-image {
+    border-radius: 25%;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    font-size: 100px;
+  }
+  
+  .toolbox-image:hover {
+    transform: rotate(360deg);
+  }
+  
+  .center-text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }

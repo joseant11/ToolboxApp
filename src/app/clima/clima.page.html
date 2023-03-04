@@ -1,0 +1,38 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-5Z9g7ZTKzPvJp7dK/WtJ0nglGCAlMHtrIvHcz+qdOt0XaEFJsqBYmKmHvI2Q8mBsfyU6lmCsgv3s+lHXW3qX9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <h1 class="centered-title">
+      <ion-icon class="logo-image" name="hammer"></ion-icon>
+      Clima
+    </h1>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="avatar">
+    <ion-icon name="rainy"></ion-icon>
+  </div>
+  <ion-card class="weather-card">
+    <ion-card-header>
+      <ion-card-title>
+        Clima para hoy
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="weather-icon">
+        <i class="fas {{ weatherIcon }}"></i>
+      </div>
+      <div class="weather-details">
+        <p><i class="fas fa-thermometer-half"></i> Temperatura: {{ temperature }} °C</p>
+        <p><i class="fas fa-wind"></i> Viento: {{ wind }} km/h</p>
+        <p><i class="fas fa-tint"></i> Humedad: {{ humidity }} %</p>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
